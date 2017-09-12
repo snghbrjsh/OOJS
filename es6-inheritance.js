@@ -36,5 +36,5 @@ class GrandChild extends Child{
 }
 
 var grandChild = new GrandChild({gc1: 'GrandChild', c1: 'Child', p1: 'Parent1', p2: 'Parent2'});
-
 grandChild.m1();
+GrandChild.mx();

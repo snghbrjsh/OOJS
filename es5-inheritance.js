@@ -39,6 +39,10 @@ GrandChild.prototype.m1 = function(){
 	Object.getPrototypeOf(GrandChild.prototype).m1();
 	console.log('m1 from GrandChild');
 }
+GrandChild.mx = function(){
+	console.log('static Function of GrandChild');
+}
 
 var grandChild = new GrandChild({gc1: 'GrandChild', c1: 'Child', p1: 'Parent1', p2: 'Parent2'});
 grandChild.m1();
+GrandChild.mx();
